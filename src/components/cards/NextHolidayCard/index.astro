@@ -1,0 +1,39 @@
+<article data-next-holiday-name>
+  <header>
+    <h2>Próximo feriado:</h2>
+    <i aria-busy="true"></i>
+  </header>
+  <main aria-busy="true"></main>
+  <footer>
+    <h6>Referencias:</h6>
+    <ul aria-busy="true"></ul>
+  </footer>
+</article>
+
+<script>
+  import json from '@/holidays/holidays.json'
+  const today = new Date()
+  const nextHoliday = json[today.getFullYear().toString() as '2024' | '2025'].holidays.find(holiday => {
+    const holidayDate = new Date(holiday.date.value)
+    return holidayDate > today
+  })
+  const article = document.querySelector<HTMLElement>('article[data-next-holiday-name]')
+  if (article) {
+    const headerTitle = article.querySelector('header i') as HTMLElement
+    const main = article.querySelector('main') as HTMLElement
+    const footerUl = article.querySelector('footer ul') as HTMLElement
+    headerTitle.removeAttribute('aria-busy')
+    headerTitle.textContent = nextHoliday ? `${nextHoliday.name} ${nextHoliday.emoji}` : ''
+    main.removeAttribute('aria-busy')
+    main.textContent = 'Main'
+    footerUl.removeAttribute('aria-busy');
+    ['1', '2', '3'].forEach(n => {
+      const li = document.createElement('li')
+      const anchor = document.createElement('a')
+      anchor.textContent = n
+      anchor.href = '#'
+      li.appendChild(anchor)
+      footerUl.appendChild(li)
+    })
+  }
+</script>

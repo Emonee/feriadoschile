@@ -1,0 +1,21 @@
+---
+import BasicHolidaysTable from '@/components/tables/BasicHolidaysTable/index.astro'
+import json from '@/holidays/holidays.json'
+import type { Holiday, Year } from '@/holidays/types'
+import Layout from '@/layouts/Layout.astro'
+
+const year = new Date().getFullYear().toString()
+const notWeekendHolidaysFilter = (holiday: Holiday) => {
+  const holidayDay = new Date(holiday.date.value).getDay()
+  return holidayDay !== 0 && holidayDay !== 6
+}
+---
+
+<Layout>
+  <h3>Feriados de carácter general</h3>
+  <p>Total: {json[(year as Year)].holidays.length}</p>
+  <p>Total no fines de semana: {json[(year as Year)].holidays.filter(notWeekendHolidaysFilter).length}</p>
+  <BasicHolidaysTable holidays={json[(year as Year)].holidays} />
+  <h3>Feriados específicos</h3>
+  <BasicHolidaysTable holidays={json[(year as Year)].special_holidays} />
+</Layout>

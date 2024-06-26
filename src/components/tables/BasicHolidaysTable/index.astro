@@ -1,0 +1,74 @@
+---
+import { showDate } from '@/helpers/dates'
+import type { Holiday } from '@/holidays/types'
+
+interface Props {
+  holidays: Holiday[]
+}
+const { holidays } = Astro.props
+const specialHolidays = holidays.some(holiday => holiday.sector)
+function dateIsWeekend (date: Date) {
+  const day = date.getDay()
+  return day === 0 || day === 6 || new Date > date
+}
+---
+<basic-holiday-table>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Fecha</th>
+        <th>Tipo</th>
+        {specialHolidays && <th>Beneficiados</th>}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        holidays.map(holiday => {
+          const date = showDate(holiday.date.value)
+          return (
+            <tr data-date={holiday.date.value} style={{ filter: dateIsWeekend(new Date(holiday.date.value)) ? 'brightness(0.6)' : 'none' }}>
+              <td>{holiday.emoji ?? ''} · {holiday.name}</td>
+              <td>{date.day} de {date.month}, {date.weekDay}</td>
+              <td>{holiday.type} {holiday.inalienable && <em class="pico-color-jade-100" data-tooltip='🎉'>Irrenunciable</em>}</td>
+              {specialHolidays && <th>{holiday.sector || '-'}</th>}
+            </tr>
+          )
+        })
+      }
+    </tbody>
+  </table>
+</basic-holiday-table>
+<script>
+  class BasicHolidayTable extends HTMLElement {
+    constructor() {
+      super()
+      let nextHolidayTr: HTMLTableRowElement | undefined
+      const trDates = this.querySelectorAll<HTMLTableRowElement>('tr[data-date]')
+      const now = new Date()
+      for (const tr of trDates) {
+        if (!tr.dataset.date) continue
+        const holidayDate = new Date(tr.dataset.date)
+        if (now < holidayDate && holidayDate.getFullYear() === now.getFullYear()) {
+          nextHolidayTr = tr
+          break
+        }
+      }
+      if (!nextHolidayTr) return
+      const holidayDate = new Date(nextHolidayTr.dataset.date ?? '')
+      const holidayDay = holidayDate.getDay()
+      const holidayIsWeekEnd = holidayDay === 0 || holidayDay === 6
+      nextHolidayTr.childNodes.forEach(child => {
+        if (!(child instanceof HTMLElement)) return
+        const backgroundColor = holidayIsWeekEnd ? 'pico-background-yellow-800' : 'pico-background-jade-800'
+        child.classList.add(backgroundColor)
+      })
+      if (!holidayIsWeekEnd || !nextHolidayTr.nextElementSibling) return
+      nextHolidayTr.nextElementSibling.childNodes.forEach(child => {
+        if (!(child instanceof HTMLElement)) return
+        child.classList.add('pico-background-jade-800')
+      })
+    }
+  }
+  customElements.define('basic-holiday-table', BasicHolidayTable)
+</script>

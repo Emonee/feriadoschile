@@ -1,0 +1,45 @@
+---
+import json from '@/holidays/holidays.json'
+import HolidayCard from '@/components/cards/NextHolidayCard/index.astro'
+
+const years = Object.keys(json)
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Feriados de Chile. Mantente al día sobre los días libres oficiales de Chile." />
+		<meta name="viewport" content="width=device-width" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇨🇱</text></svg>">
+		<meta name="generator" content={Astro.generator} />
+		<title>Feriados Chile</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><h1 style={{ marginBottom: 0 }}>Feriados Chile</h1></li>
+				</ul>
+				<ul>
+					{
+						years.map(year => <li><a href={`/${year}`}>{year}</a></li>)
+					}
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<HolidayCard />
+			<slot />
+		</main>
+		<footer>
+			<h2>Preguntas frecuentes:</h2>
+			<h4>¿Qué es un feriado <i>Irrenunciable</i>?</h4>
+			<p>Significa que el comercio debe permanecer cerrado durante el feriado, con el objetivo de garantizar que los trabajadores descansen ese día. Están excluidos los restaurantes, cines fuera de centros comerciales, farmacias de turno y bencineras que pueden trabajar normalmente. También pueden abrir los negocios si son atendidos por sus propios dueños.</p>
+		</footer>
+	</body>
+</html>

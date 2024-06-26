@@ -1,0 +1,560 @@
+{
+    "2024": {
+        "holidays": [
+            {
+              "name": "Año Nuevo",
+              "emoji": "🎉",
+              "date": {
+                "value": "2024-01-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            },
+            {
+              "name": "Viernes Santo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-03-29T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Sábado Santo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-03-30T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Día Nacional del Trabajo",
+              "emoji": "💼",
+              "date": {
+                "value": "2024-05-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Código del Trabajo", "Ley 19.973"]
+            },
+            {
+              "name": "Día de las Glorias Navales",
+              "emoji": "🚢",
+              "date": {
+                "value": "2024-05-21T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Elecciones Primarias Alcaldes y Gobernadores",
+              "emoji": "📨",
+              "date": {
+                "value": "2024-06-09T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973"]
+            },
+            {
+              "name": "Día Nacional de los Pueblos Indígenas",
+              "emoji": "🪷",
+              "date": {
+                "value": "2024-06-20T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 21.357"]
+            },
+            {
+              "name": "San Pedro y San Pablo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-06-29T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977", "Ley 18.432", "Ley 19.668"]
+            },
+            {
+              "name": "Día de la Virgen del Carmen",
+              "emoji": "😇",
+              "date": {
+                "value": "2024-07-16T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 20.148"]
+            },
+            {
+              "name": "Asunción de la Virgen",
+              "emoji": "↗️",
+              "date": {
+                "value": "2024-08-15T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Independencia Nacional",
+              "emoji": "🇨🇱",
+              "date": {
+                "value": "2024-09-18T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            },
+            {
+              "name": "Día de las Glorias del Ejército",
+              "emoji": "🔫",
+              "date": {
+                "value": "2024-09-19T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 20.629"]
+            },
+            {
+              "name": "Feriado Adicional Fiestas Patrias",
+              "emoji": "🇨🇱",
+              "date": {
+                "value": "2024-09-20T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 20.215"]
+            },
+            {
+              "name": "Encuentro de Dos Mundos",
+              "emoji": "🌎",
+              "date": {
+                "value": "2024-10-12T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 3.810", "Ley 19.668"]
+            },
+            {
+              "name": "Elecciones Municipales, Consejeros Regionales y Gobernadores Regionales",
+              "emoji": "📨",
+              "date": {
+                "value": "2024-10-27T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973"]
+            },
+            {
+              "name": "Día de las Iglesias Evangélicas y Protestantes",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-10-31T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 20.299"]
+            },
+            {
+              "name": "Día de Todos los Santos",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-11-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Segunda Vuelta Elección Gobernadores Regionales",
+              "emoji": "📨",
+              "date": {
+                "value": "2024-11-24T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973"]
+            },
+            {
+              "name": "Inmaculada Concepción",
+              "emoji": "✝️",
+              "date": {
+                "value": "2024-12-08T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Navidad",
+              "emoji": "🎅",
+              "date": {
+                "value": "2024-12-25T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            }
+          ],
+        "special_holidays": [
+            {
+              "name": "Asalto y Toma del Morro de Arica",
+              "emoji": "🎉",
+              "date": {
+                "value": "2024-06-07T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Región de Arica y Parinacota",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 20.663"]
+            },
+            {
+              "name": "Nacimiento del Prócer de la Independencia",
+              "emoji": "🎉",
+              "date": {
+                "value": "2024-08-20T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Comunas de Chillán y Chillán Viejo",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 16.535", "Ley 20.768"]
+            },
+            {
+              "name": "Feriado Bancario",
+              "emoji": "🎉",
+              "date": {
+                "value": "2024-12-31T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Trabajadores de Instituciones Bancarias",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley General de Bancos"]
+            }
+        ]
+    },
+    "2025": {
+        "holidays": [
+            {
+              "name": "Año Nuevo",
+              "emoji": "🎉",
+              "date": {
+                "value": "2025-01-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            },
+            {
+              "name": "Viernes Santo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-04-18T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Sábado Santo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-04-19T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Día Nacional del Trabajo",
+              "emoji": "💼",
+              "date": {
+                "value": "2025-05-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Código del Trabajo", "Ley 19.973"]
+            },
+            {
+              "name": "Día de las Glorias Navales",
+              "emoji": "🚢",
+              "date": {
+                "value": "2025-05-21T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Día Nacional de los Pueblos Indígenas",
+              "emoji": "🪷",
+              "date": {
+                "value": "2025-06-20T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 21.357"]
+            },
+            {
+              "name": "San Pedro y San Pablo",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-06-29T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977", "Ley 18.432", "Ley 19.668"]
+            },
+            {
+              "name": "Elecciones Primarias Presidenciales y Parlamentarias",
+              "emoji": "📨",
+              "date": {
+                "value": "2025-06-29T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973", "Ley 20.640"]
+            },
+            {
+              "name": "Día de la Virgen del Carmen",
+              "emoji": "😇",
+              "date": {
+                "value": "2025-07-16T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 20.148"]
+            },
+            {
+              "name": "Asunción de la Virgen",
+              "emoji": "↗️",
+              "date": {
+                "value": "2025-08-15T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Independencia Nacional",
+              "emoji": "🇨🇱",
+              "date": {
+                "value": "2025-09-18T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            },
+            {
+              "name": "Día de las Glorias del Ejército",
+              "emoji": "🔫",
+              "date": {
+                "value": "2025-09-19T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 20.629"]
+            },
+            {
+              "name": "Encuentro de Dos Mundos",
+              "emoji": "🌎",
+              "date": {
+                "value": "2025-10-12T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 3.810", "Ley 19.668"]
+            },
+            {
+              "name": "Día de las Iglesias Evangélicas y Protestantes",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-10-31T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 20.299"]
+            },
+            {
+              "name": "Día de Todos los Santos",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-11-01T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Elecciones Presidenciales y Parlamentarias",
+              "emoji": "📨",
+              "date": {
+                "value": "2025-11-16T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973", "Ley 20.515", "Ley 21.073"]
+            },
+            {
+              "name": "Inmaculada Concepción",
+              "emoji": "✝️",
+              "date": {
+                "value": "2025-12-08T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": false,
+              "legal_references": ["Ley 2.977"]
+            },
+            {
+              "name": "Elecciones Presidenciales (Segunda Vuelta)",
+              "emoji": "📨",
+              "date": {
+                "value": "2025-12-14T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Civil",
+              "inalienable": true,
+              "legal_references": ["Ley 18.700", "Ley 19.973", "Ley 20.515"]
+            },
+            {
+              "name": "Navidad",
+              "emoji": "🎅",
+              "date": {
+                "value": "2025-12-25T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "type": "Religioso",
+              "inalienable": true,
+              "legal_references": ["Ley 2.977", "Ley 19.973"]
+            }
+        ],
+        "special_holidays": [
+            {
+              "name": "Asalto y Toma del Morro de Arica",
+              "emoji": "🎉",
+              "date": {
+                "value": "2025-06-07T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Región de Arica y Parinacota",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 20.663"]
+            },
+            {
+              "name": "Nacimiento del Prócer de la Independencia",
+              "emoji": "🎉",
+              "date": {
+                "value": "2025-08-20T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Comunas de Chillán y Chillán Viejo",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley 16.535", "Ley 20.768"]
+            },
+            {
+              "name": "Feriado Bancario",
+              "emoji": "🎉",
+              "date": {
+                "value": "2025-12-31T00:00:00",
+                "format": "ISO 8601",
+                "format_type": "local"
+              },
+              "sector": "Trabajadores de Instituciones Bancarias",
+              "type": "Civil",
+              "inalienable": false,
+              "legal_references": ["Ley General de Bancos"]
+            }
+        ]
+    }
+}
